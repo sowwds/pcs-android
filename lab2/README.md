@@ -2,6 +2,27 @@
 
 Проект в figma - https://www.figma.com/design/pCzK1HQY9DkxwQJWJuRuCj/pcs-lab-2?node-id=0-1&t=lz7ffWRsP14ZY0HP-1
 
+
+#### Были созданы экраны
+
+| название  | значение |
+| ------------- | ------------- |
+| welcome  | стартовый экран с входом  |
+| main screen  | основной экран со списком задач  |
+| add item screen | экран добавления новой задачи |
+
+#### Использованные элементы интерфейса
+- Кнопки взаимодействия (`rectangle` и `text`)
+- Логотип (лично созданная в figma иконка из курса дизайна)
+- Кнопка "назад" (иконка из библиотеки figma)
+- Текст задачи (`rectangle` для чек-бокса и `text` для текста задачи)
+- Поле ввода текста (`rectangle` и `text`)
+
+#### Взаимодействие
+- кнопка "войти" на `welcome` экране переносит пользователя на экран `main screen`
+- кнопка "+" на `main screen` экране переносит пользователя на экран `add item screen`
+- кнопки "←" и "готово" на `add item screen` переносят пользователя на экран `main screen`
+
 <img width="1070" height="724" alt="image" src="https://github.com/user-attachments/assets/463bb2e5-cb23-4cf0-bd5c-58e5c2dcdf24" />
 
 <img width="1158" height="720" alt="image" src="https://github.com/user-attachments/assets/3b6f2b19-a2fd-463c-9c59-d92ca5bd5753" />
