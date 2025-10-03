@@ -44,18 +44,34 @@ class _EditNotePageState extends State<EditNotePage> {
             children: [
               TextFormField(
                 initialValue: _title,
+                style: const TextStyle(color: Colors.white),
                 decoration: const InputDecoration(
                   labelText: 'Заголовок',
+                  labelStyle: TextStyle(color: Colors.white70),
                   border: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xFF796697), width: 2),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
                 ),
                 onSaved: (v) => _title = v!.trim(),
               ),
               const SizedBox(height: 12),
               TextFormField(
                 initialValue: _body,
+                style: const TextStyle(color: Colors.white),
                 decoration: const InputDecoration(
                   labelText: 'Текст',
+                  labelStyle: TextStyle(color: Colors.white70),
                   border: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xFF796697), width: 2),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey),
+                  ),
                 ),
                 minLines: 3,
                 maxLines: 6,
@@ -67,9 +83,10 @@ class _EditNotePageState extends State<EditNotePage> {
               const Spacer(),
               FilledButton.icon(
                 onPressed: _save,
-                icon: const Icon(Icons.check),
-                label: const Text('Сохранить'),
+                icon: const Icon(Icons.check, color: Colors.white),
+                label: const Text('Сохранить', style: TextStyle(color: Colors.white)),
                 style: FilledButton.styleFrom(
+                  backgroundColor: const Color(0xFF7B689B), // Save button color
                   minimumSize: const Size.fromHeight(48),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),

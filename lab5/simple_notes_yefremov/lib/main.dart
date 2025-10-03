@@ -10,7 +10,22 @@ class SimpleNotesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Simple Notes',
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData(
+        useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xFF1F1F2F), // Main background
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF2F3041), // AppBar background
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20), // AppBar title
+          iconTheme: IconThemeData(color: Colors.white), // Search/close icons
+        ),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: Color(0xFF8CBD8A), // "+" button background
+          foregroundColor: Colors.white, // "+" icon
+        ),
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(color: Colors.white), // Default text
+        ),
+      ),
       home: const NotesPage(),
     );
   }
@@ -62,9 +77,11 @@ class _NotesPageState extends State<NotesPage> {
     setState(() => _notes.removeAt(index));
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: const Text('Заметка удалена'),
+        content: const Text('Заметка удалена', style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.red,
         action: SnackBarAction(
           label: 'Отменить',
+          textColor: Colors.white,
           onPressed: () {
             if (mounted) {
               setState(() => _notes.insert(index, note));
@@ -98,14 +115,16 @@ class _NotesPageState extends State<NotesPage> {
         title: _isSearching
             ? TextField(
                 controller: _searchController,
+                style: const TextStyle(color: Colors.white),
                 decoration: const InputDecoration(
                   hintText: 'Поиск по заголовку...',
+                  hintStyle: TextStyle(color: Colors.white70),
                   border: InputBorder.none,
                 ),
                 autofocus: true,
                 onChanged: _onSearchChanged,
               )
-            : const Text('Практическая 5'),
+            : const Text('Simple Notes'),
         actions: [
           IconButton(
             icon: Icon(_isSearching ? Icons.close : Icons.search),
@@ -118,7 +137,7 @@ class _NotesPageState extends State<NotesPage> {
         child: const Icon(Icons.add),
       ),
       body: _filteredNotes.isEmpty
-          ? const Center(child: Text('Пока нет заметок. Нажмите +'))
+          ? const Center(child: Text('Пока нет заметок. Нажмите +', style: TextStyle(color: Colors.white)))
           : ListView.builder(
               itemCount: _filteredNotes.length,
               itemBuilder: (context, i) {
@@ -134,6 +153,7 @@ class _NotesPageState extends State<NotesPage> {
                   ),
                   onDismissed: (direction) => _delete(note),
                   child: Card(
+                    color: const Color(0xFF2F3041), // Card background
                     margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     elevation: 4,
                     shape: RoundedRectangleBorder(
@@ -143,16 +163,17 @@ class _NotesPageState extends State<NotesPage> {
                       contentPadding: const EdgeInsets.all(16),
                       title: Text(
                         note.title.isEmpty ? '(без названия)' : note.title,
-                        style: const TextStyle(fontWeight: FontWeight.bold),
+                        style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                       ),
                       subtitle: Text(
                         note.body,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(color: Colors.white70),
                       ),
                       onTap: () => _edit(note),
                       trailing: IconButton(
-                        icon: const Icon(Icons.delete_outline),
+                        icon: const Icon(Icons.delete_outline, color: Colors.white),
                         onPressed: () => _delete(note),
                       ),
                     ),
