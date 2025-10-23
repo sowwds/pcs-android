@@ -1,5 +1,3 @@
-// lib/screens/home_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:madshop_ui_Efremov/models/product.dart';
@@ -18,7 +16,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
   final List<Widget> _screens = [
-    HomeScreenContent(), // Updated to non-const for state
+    HomeScreenContent(),
     FavouritesScreen(),
     CartScreen(),
   ];
@@ -108,8 +106,8 @@ class _HomeScreenContentState extends State<HomeScreenContent> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        leading: null, // Explicitly remove leading
-        automaticallyImplyLeading: false, // Prevent automatic back button
+        leading: null,
+        automaticallyImplyLeading: false,
         title: _isSearching
             ? Container(
                 height: 36,

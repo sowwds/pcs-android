@@ -22,7 +22,7 @@ class MadShopApp extends StatelessWidget {
           titleMedium: TextStyle(fontSize: 22, fontFamily: 'Nunito Sans', color: Colors.black),
         ),
       ),
-      home: CreateAccountScreen(), // Убрал const
+      home: CreateAccountScreen(),
     );
   }
 }

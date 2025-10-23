@@ -1,5 +1,3 @@
-// lib/widgets/product_card.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:madshop_ui_Efremov/models/product.dart';
@@ -21,7 +19,7 @@ class _ProductCardState extends State<ProductCard> {
       onTap: widget.onTap,
       child: SizedBox(
         width: 150,
-        height: 220, // Total height remains 220px
+        height: 220,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -104,7 +102,7 @@ class _ProductCardState extends State<ProductCard> {
                 maxLines: 2, // Limit to 2 lines
               ),
             ),
-            const SizedBox(height: 5), // Controlled gap between name and price
+            const SizedBox(height: 5),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(

@@ -1,5 +1,3 @@
-// lib/screens/cart_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:madshop_ui_Efremov/models/product.dart';

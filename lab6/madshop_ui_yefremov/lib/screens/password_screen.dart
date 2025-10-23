@@ -1,11 +1,9 @@
-// lib/screens/password_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:madshop_ui_Efremov/theme/colors.dart'; // Assuming colors are defined here
-import 'package:madshop_ui_Efremov/theme/text_styles.dart'; // Assuming styles are defined here
-import 'package:madshop_ui_Efremov/screens/login_screen.dart'; // Assuming login_screen.dart exists
-import 'package:madshop_ui_Efremov/screens/home_screen.dart'; // Assuming home_screen.dart exists
+import 'package:madshop_ui_Efremov/theme/colors.dart';
+import 'package:madshop_ui_Efremov/theme/text_styles.dart';
+import 'package:madshop_ui_Efremov/screens/login_screen.dart';
+import 'package:madshop_ui_Efremov/screens/home_screen.dart';
 
 class PasswordScreen extends StatefulWidget {
   const PasswordScreen({super.key});
@@ -32,12 +30,12 @@ class _PasswordScreenState extends State<PasswordScreen> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center, // Center all content horizontally
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const SizedBox(height: 200),
                   Text(
                     'Hello',
-                    style: AppTextStyles.title, // Raleway bold 50
+                    style: AppTextStyles.title,
                   ),
                   const SizedBox(height: 20),
                   Text(
@@ -56,7 +54,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                     height: 50,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: AppColors.fieldBackground, // #E2E2E3
+                      color: AppColors.fieldBackground,
                       borderRadius: BorderRadius.circular(60),
                     ),
                     child: TextField(
@@ -64,7 +62,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                       textAlignVertical: TextAlignVertical.center,
                       decoration: InputDecoration(
                         hintText: 'Password',
-                        hintStyle: AppTextStyles.inputHint, // Poppins medium 14, #C1C1C3
+                        hintStyle: AppTextStyles.inputHint,
                         border: InputBorder.none,
                         contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                         suffixIcon: IconButton(
@@ -84,7 +82,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                           },
                         ),
                       ),
-                      style: AppTextStyles.input, // Poppins medium 14
+                      style: AppTextStyles.input,
                     ),
                   ),
                   const SizedBox(height: 100),
@@ -97,7 +95,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.primaryButton, // #0448EB
+                      backgroundColor: AppColors.primaryButton,
                       minimumSize: const Size(double.infinity, 50),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
@@ -105,7 +103,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                     ),
                     child: Text(
                       'Start',
-                      style: AppTextStyles.button, // Nunito Sans light 22, white
+                      style: AppTextStyles.button,
                     ),
                   ),
                   const SizedBox(height: 10),

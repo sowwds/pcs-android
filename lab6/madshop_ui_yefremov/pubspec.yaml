@@ -46,7 +46,6 @@ flutter:
     - assets/images/jamper_ranim.png
     - assets/images/tshirt_nazgul.png
 
-    # Add other assets (e.g., bubble01.svg, bubble02.svg) if needed
 
   fonts:
     - family: NunitoSans
@@ -67,5 +66,5 @@ flutter_launcher_icons:
   android: true
   ios: true
   image_path: "assets/images/logo.png"
-  min_sdk_android: 21 # Optional, adjust if needed
+  min_sdk_android: 21
   remove_alpha_ios: true

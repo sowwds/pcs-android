@@ -1,10 +1,8 @@
-// lib/screens/create_account_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:madshop_ui_Efremov/theme/colors.dart'; // Assuming colors are defined here
-import 'package:madshop_ui_Efremov/theme/text_styles.dart'; // Assuming styles are defined here
-import 'package:madshop_ui_Efremov/screens/login_screen.dart'; // Assuming login_screen.dart exists
+import 'package:madshop_ui_Efremov/theme/colors.dart';
+import 'package:madshop_ui_Efremov/theme/text_styles.dart';
+import 'package:madshop_ui_Efremov/screens/login_screen.dart';
 
 class CreateAccountScreen extends StatefulWidget {
   const CreateAccountScreen({super.key});
@@ -36,26 +34,26 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                   const SizedBox(height: 100),
                   Text(
                     'Create Account',
-                    style: AppTextStyles.title, // Raleway bold 50
+                    style: AppTextStyles.title,
                   ),
                   const SizedBox(height: 120),
                   // Email field
                   Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      color: AppColors.fieldBackground, // #E2E2E3
+                      color: AppColors.fieldBackground,
                       borderRadius: BorderRadius.circular(60),
                     ),
                     child: TextField(
                       textAlignVertical: TextAlignVertical.center,
                       decoration: InputDecoration(
                         hintText: 'Email',
-                        hintStyle: AppTextStyles.inputHint, // Poppins medium 14, #C1C1C3
+                        hintStyle: AppTextStyles.inputHint,
                         border: InputBorder.none,
                         contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                         alignLabelWithHint: true,
                       ),
-                      style: AppTextStyles.input, // Poppins medium 14
+                      style: AppTextStyles.input,
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -63,7 +61,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                   Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      color: AppColors.fieldBackground, // #E2E2E3
+                      color: AppColors.fieldBackground,
                       borderRadius: BorderRadius.circular(60),
                     ),
                     child: TextField(
@@ -71,7 +69,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                       textAlignVertical: TextAlignVertical.center,
                       decoration: InputDecoration(
                         hintText: 'Password',
-                        hintStyle: AppTextStyles.inputHint, // Poppins medium 14, #C1C1C3
+                        hintStyle: AppTextStyles.inputHint,
                         border: InputBorder.none,
                         contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                         suffixIcon: IconButton(
@@ -91,7 +89,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                           },
                         ),
                       ),
-                      style: AppTextStyles.input, // Poppins medium 14
+                      style: AppTextStyles.input,
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -99,18 +97,18 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                   Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      color: AppColors.fieldBackground, // #E2E2E3
+                      color: AppColors.fieldBackground,
                       borderRadius: BorderRadius.circular(60),
                     ),
                     child: TextField(
                       textAlignVertical: TextAlignVertical.center,
                       decoration: InputDecoration(
                         hintText: 'Your Phone',
-                        hintStyle: AppTextStyles.inputHint, // Poppins medium 14, #C1C1C3
+                        hintStyle: AppTextStyles.inputHint,
                         border: InputBorder.none,
                         contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                         prefixIcon: Container(
-                          width: 50, // Fixed width for prefix
+                          width: 50,
                           margin: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
                           decoration: const BoxDecoration(
                             border: Border(
@@ -126,10 +124,10 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                           ),
                         ),
                       ),
-                      style: AppTextStyles.input, // Poppins medium 14
+                      style: AppTextStyles.input,
                     ),
                   ),
-                  const SizedBox(height: 20), // Assuming a reasonable gap to the button
+                  const SizedBox(height: 20),
                   // Done button
                   ElevatedButton(
                     onPressed: () {
@@ -139,7 +137,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.primaryButton, // #0448EB
+                      backgroundColor: AppColors.primaryButton,
                       minimumSize: const Size(double.infinity, 50),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
@@ -147,10 +145,10 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                     ),
                     child: Text(
                       'Done',
-                      style: AppTextStyles.button, // Nunito Sans light 22, white
+                      style: AppTextStyles.button,
                     ),
                   ),
-                  const SizedBox(height: 20), // Extra space at bottom to avoid overflow
+                  const SizedBox(height: 20),
                 ],
               ),
             ),

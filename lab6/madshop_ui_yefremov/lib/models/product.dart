@@ -1,5 +1,3 @@
-// lib/models/product.dart
-
 class Product {
   final String id;
   final String imagePath;
@@ -63,5 +61,4 @@ final List<Product> products = [
     name: 'Футболка NAZGUL',
     price: 4800,
   ),
-  // Add more products as needed
 ];

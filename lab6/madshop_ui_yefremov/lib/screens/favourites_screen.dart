@@ -1,5 +1,3 @@
-// lib/screens/favourites_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:madshop_ui_Efremov/models/product.dart';
 import 'package:madshop_ui_Efremov/screens/product_screen.dart';
@@ -21,8 +19,8 @@ class _FavouritesScreenState extends State<FavouritesScreen> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        leading: null, // Explicitly remove leading
-        automaticallyImplyLeading: false, // Prevent automatic back button
+        leading: null,
+        automaticallyImplyLeading: false,
         title: const Text(
           'Favourites',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),

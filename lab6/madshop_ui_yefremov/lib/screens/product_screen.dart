@@ -1,5 +1,3 @@
-// lib/screens/product_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:madshop_ui_Efremov/models/product.dart';
 import 'package:madshop_ui_Efremov/theme/colors.dart';
