@@ -1,0 +1,71 @@
+name: madshop_ui_Efremov
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/background-1.png
+    - assets/images/eye-slash.svg
+    - assets/images/in-favourites.svg
+    - assets/images/in-favourites-selected.svg
+    - assets/images/in-cart.svg
+    - assets/images/in-cart-selected.svg
+    - assets/images/home-icon.svg
+    - assets/images/home-icon-selected.svg
+    - assets/images/favourites-icon.svg
+    - assets/images/favourites-icon-selected.svg
+    - assets/images/cart-icon.svg
+    - assets/images/cart-icon-selected.svg
+    - assets/images/Less.svg
+    - assets/images/More.svg
+    - assets/images/trash-icon.svg
+
+    - assets/images/fliska_swords.png
+    - assets/images/jamper_masverk.png
+    - assets/images/tshirt_warrior_wolf.png
+    - assets/images/backpack_dungeon.png
+    - assets/images/tshirt_sasha_sulim.png
+    - assets/images/jamper_ranim.png
+    - assets/images/tshirt_nazgul.png
+
+    # Add other assets (e.g., bubble01.svg, bubble02.svg) if needed
+
+  fonts:
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf
+          weight: 100
+          style: normal
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Bold.ttf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21 # Optional, adjust if needed
+  remove_alpha_ios: true
