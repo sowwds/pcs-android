@@ -96,19 +96,32 @@ class AuthGate extends StatelessWidget {
 #### 3. Контрольные скриншоты
 
 1.  **Скриншот настроенного проекта Supabase (Dashboard: Database → notes, включён RLS, список Policies):**
-    *(Вставить скриншот)*
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/7a92cc4c-6bf4-4cd7-b2c0-527cc8ff5f6f" />
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/cf4c98ec-f5c9-43a6-9956-5bbf650f3f92" />
 
-2.  **Скриншот экрана входа и экрана со списком (пустого и с данными):**
-    *(Вставить скриншот)*
 
-3.  **Скриншот после добавления заметки (элемент появился):**
-    *(Вставить скриншот)*
+3.  **Скриншот экрана входа и экрана со списком (пустого и с данными):**
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/7f40f99c-1bb8-4b55-8eeb-7ddaf4b965d4" />
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/104b3f1e-0311-4325-98d7-498a35aa8f7c" />
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/acc345c8-0dd8-4a6c-9317-b48b96f1ce08" />
 
-4.  **Скриншот после редактирования заметки:**
-    *(Вставить скриншот)*
+    
+5.  **Скриншот после добавления заметки (элемент появился):**
 
-5.  **Скриншот после удаления заметки:**
-    *(Вставить скриншот)*
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/dd2cc531-3751-409e-a71b-2d91a5e26113" />
+
+
+6.  **Скриншот после редактирования заметки:**
+    
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/ac0847eb-ab33-4224-aaf7-a7efb3bf8d41" />
+
+
+7.  **Скриншот после удаления заметки:**
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/03872067-763c-4caa-a0b6-cb33c7705c4f" />
+
 
 ### **Безопасность: RLS в продакшене**
 
