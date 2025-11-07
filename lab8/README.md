@@ -53,19 +53,33 @@
 #### 4. Контрольные скриншоты
 
 1.  **Скриншот настроенного проекта Firebase:**
-    *(вставить скриншот страницы проекта Firebase или Firestore с коллекцией notes)*
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/e59a9ef6-1663-44e0-9724-49b7e8d277bc" />
 
-2.  **Скриншот запущенного приложения:**
-    *(вставить скриншот приложения со списком заметок)*
 
-3.  **Скриншот после добавления заметки:**
-    *(вставить скриншот, где видна новая заметка в списке)*
+3.  **Скриншот запущенного приложения:**
 
-4.  **Скриншот после редактирования заметки:**
-    *(вставить скриншот с обновленным текстом заметки)*
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/1e854622-9928-485a-81a6-27c4f3ac4cfa" />
 
-5.  **Скриншот после удаления заметки:**
-    *(вставить скриншот, где заметка удалена из списка)*
+
+5.  **Скриншот после добавления заметки:**
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/4713b2bf-25c5-4441-969d-bef5a2263578" />
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/3330e5cd-0063-444c-92f6-d2aa082b396a" />
+
+
+7.  **Скриншот после редактирования заметки:**
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/e1dcdd4c-6ed2-4760-862f-d2a4adf49fdf" />
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/c45a5c54-9d63-4400-b882-680cd4f2851b" />
+
+
+9.  **Скриншот после удаления заметки:**
+    
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/3ece85a5-81c1-4d0f-9734-6c3850ad5b62" />
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/84d8523e-065a-4dc0-8436-fee4ec95c8b8" />
+
+
 
 ### **Безопасность: что поменять в продакшене**
 
