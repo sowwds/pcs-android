@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911164758009",
+    "project_id": "yefremov-firebase-notes-app",
+    "storage_bucket": "yefremov-firebase-notes-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911164758009:android:91f005b8abbca2c91b8f28",
+        "android_client_info": {
+          "package_name": "com.example.yefremov_firebase_notes_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK73cezkuYob7Xzt63q4zwyDIZdaJPDus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
