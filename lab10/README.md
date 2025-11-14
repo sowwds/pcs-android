@@ -29,16 +29,21 @@
 #### 4. Контрольные скриншоты
 
 1.  **Скриншот приложения с пустым списком (первый запуск):**
-    <img height="400" alt="image" src="PLACEHOLDER_EMPTY_LIST_SCREENSHOT" />
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/c697e623-3f8e-433e-9548-e41b80975f4f" />
 
 2.  **Скриншот после добавления заметки:**
-    <img height="400" alt="image" src="PLACEHOLDER_NOTE_ADDED_SCREENSHOT" />
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/81c03648-daa1-47b8-adf5-0076d8d0ea83" />    
 
 3.  **Скриншот окна редактирования и итоговой записи:**
-    <img height="400" alt="image" src="PLACEHOLDER_EDIT_DIALOG_SCREENSHOT" />
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/ec3f68ca-20be-4240-9731-b4b3aa36dec9" />
 
 4.  **Скриншот после удаления заметки:**
-    <img height="400" alt="image" src="PLACEHOLDER_NOTE_DELETED_SCREENSHOT" />
+   
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/9499aa40-1152-48b0-8fb7-17593425bfca" />
+
 
 ### **Ошибки и их решения**
 
