@@ -32,13 +32,20 @@
 #### 4. Контрольные скриншоты
 
 1.  **Скриншот экрана списка:**
-    *(место для скриншота)*
+
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/be80499d-7f36-4c9c-a73b-f70e87fbab36" />
+
 
 2.  **Скриншот экрана деталей:**
-    *(место для скриншота)*
+
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/1e0a2ff9-d0fe-425f-8dca-7b7713c47ccc" />
+
 
 3.  **Скриншот диалога создания и результата (новый элемент в списке):**
-    *(место для скриншота)*
+
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/c72b9089-849d-4f86-a38b-640e73d2de1c" />
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/30db1109-cb3a-4b0e-aa87-62372cf31d79" />
+
 
 ### **Ошибки и их решения**
 
