@@ -26,13 +26,19 @@
 #### 4. Контрольные скриншоты
 
 1.  **Интерфейс (главный экран):**
-    *(место для скриншота)*
+
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/65f751ed-57c5-4777-8a02-5cb056846a06" />
+
 
 2.  **Камера в действии:**
-    *(место для скриншота)*
+
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/f0649b24-4c76-484e-b024-89194a040930" />
+
 
 3.  **Отображение выбранного фото:**
-    *(место для скриншота)*
+
+    <img height="400" alt="image" src="https://github.com/user-attachments/assets/b2127d7a-ca62-47fa-ae50-c2ee2cd168d9" />
+
 
 ### **Ошибки и их решения**
 `flutter analyze` нашел две проблемы:
