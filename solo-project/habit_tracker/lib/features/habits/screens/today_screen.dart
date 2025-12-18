@@ -187,8 +187,8 @@ class _TodayScreenState extends State<TodayScreen> {
           ),
           TextButton(
             onPressed: () => Navigator.of(context).pop(true),
-            child: const Text('Delete'),
             style: TextButton.styleFrom(foregroundColor: AppColors.red),
+            child: const Text('Delete'),
           ),
         ],
       ),
@@ -231,6 +231,7 @@ class _TodayScreenState extends State<TodayScreen> {
                         onTap: () => _navigateToDetails(habit),
                         onLongPress: () => _showOptions(habit),
                         child: HabitListItem(
+                          key: ValueKey(habit.id),
                           habit: habit,
                           progress: progress,
                           isCompleted: progress != null && progress > 0,

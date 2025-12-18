@@ -4,7 +4,9 @@ import 'package:habit_tracker/core/constants/app_colors.dart';
 import 'package:habit_tracker/core/services/supabase_service.dart';
 import 'package:habit_tracker/features/habits/models/habit.dart';
 import 'package:habit_tracker/features/habits/services/habits_service.dart';
+import 'package:habit_tracker/features/habits/utils/icon_utils.dart';
 import 'package:habit_tracker/features/habits/widgets/color_picker.dart';
+import 'package:habit_tracker/features/habits/widgets/icon_picker.dart';
 
 class HabitFormScreen extends StatefulWidget {
   final Habit? habit;
@@ -26,6 +28,7 @@ class _HabitFormScreenState extends State<HabitFormScreen> {
   final _habitsService = HabitsService();
 
   late Color _selectedColor;
+  late String? _selectedIconName;
   bool _isCounterHabit = false;
   bool _isLoading = false;
 
@@ -41,6 +44,7 @@ class _HabitFormScreenState extends State<HabitFormScreen> {
       _nameController.text = widget.habit!.name;
       _descriptionController.text = widget.habit!.description ?? '';
       _selectedColor = widget.habit!.color;
+      _selectedIconName = widget.habit!.iconName;
       _isCounterHabit = widget.habit!.habitType == HabitType.counter;
       if(_isCounterHabit) {
         _goalController.text = widget.habit!.counterGoal?.toString() ?? '';
@@ -49,6 +53,7 @@ class _HabitFormScreenState extends State<HabitFormScreen> {
       }
     } else {
       _selectedColor = _availableColors.first;
+      _selectedIconName = null;
     }
   }
 
@@ -69,6 +74,7 @@ class _HabitFormScreenState extends State<HabitFormScreen> {
         name: _nameController.text.trim(),
         description: _descriptionController.text.trim(),
         color: _selectedColor,
+        iconName: _selectedIconName,
         createdAt: widget.habit?.createdAt ?? DateTime.now(),
         habitType: _isCounterHabit ? HabitType.counter : HabitType.simple,
         counterGoal: _isCounterHabit ? int.tryParse(_goalController.text) : null,
@@ -141,13 +147,40 @@ class _HabitFormScreenState extends State<HabitFormScreen> {
                 availableColors: _availableColors,
                 onColorSelected: (color) => setState(() => _selectedColor = color),
               ),
+              const SizedBox(height: 24),
+              Text('Icon', style: Theme.of(context).textTheme.titleMedium),
+              const SizedBox(height: 8),
+              Center(
+                child: GestureDetector(
+                  onTap: () async {
+                    final newIconName = await showIconPicker(
+                      context: context,
+                      iconColor: _selectedColor,
+                    );
+                    if (newIconName != null) {
+                      setState(() {
+                        _selectedIconName = newIconName;
+                      });
+                    }
+                  },
+                  child: CircleAvatar(
+                    radius: 35,
+                    backgroundColor: _selectedColor,
+                    child: Icon(
+                      IconUtils.getIconData(_selectedIconName),
+                      color: Colors.white,
+                      size: 35,
+                    ),
+                  ),
+                ),
+              ),
               const SizedBox(height: 16),
               SwitchListTile(
                 title: Text('Counter Habit', style: Theme.of(context).textTheme.titleMedium),
                 subtitle: Text('e.g., tracking glasses of water'),
                 value: _isCounterHabit,
                 onChanged: (value) => setState(() => _isCounterHabit = value),
-                activeColor: AppColors.lavender,
+                activeTrackColor: AppColors.lavender,
               ),
               if (_isCounterHabit) ...[
                 const SizedBox(height: 16),

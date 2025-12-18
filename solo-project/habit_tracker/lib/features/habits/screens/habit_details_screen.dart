@@ -122,8 +122,8 @@ class _HabitDetailsScreenState extends State<HabitDetailsScreen> {
           ),
           TextButton(
             onPressed: () => Navigator.of(context).pop(true),
-            child: const Text('Delete'),
             style: TextButton.styleFrom(foregroundColor: AppColors.red),
+            child: const Text('Delete'),
           ),
         ],
       ),
@@ -149,7 +149,7 @@ class _HabitDetailsScreenState extends State<HabitDetailsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.habit.name),
-        backgroundColor: widget.habit.color.withOpacity(0.2),
+        backgroundColor: widget.habit.color.withAlpha((255 * 0.2).round()),
         actions: [
           IconButton(
             icon: const Icon(Icons.edit_outlined),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:habit_tracker/core/constants/app_colors.dart';
 import 'package:habit_tracker/features/habits/models/habit.dart';
+import 'package:habit_tracker/features/habits/utils/icon_utils.dart';
 
 class HabitListItem extends StatelessWidget {
   final Habit habit;
@@ -57,7 +58,7 @@ class HabitListItem extends StatelessWidget {
 
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 8.0),
-      color: isGoalReached ? AppColors.green.withOpacity(0.1) : AppColors.surface0,
+      color: isGoalReached ? AppColors.green.withAlpha((255 * 0.1).round()) : AppColors.surface0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
         side: isGoalReached
@@ -66,12 +67,11 @@ class HabitListItem extends StatelessWidget {
       ),
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-        leading: Container(
-          width: 24,
-          height: 24,
-          decoration: BoxDecoration(
-            color: habit.color,
-            shape: BoxShape.circle,
+        leading: CircleAvatar(
+          backgroundColor: habit.color,
+          child: Icon(
+            IconUtils.getIconData(habit.iconName),
+            color: Colors.white,
           ),
         ),
         title: Text(

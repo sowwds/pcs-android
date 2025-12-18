@@ -10,6 +10,7 @@ class Habit {
   final String name;
   final String? description;
   final Color color;
+  final String? iconName; // Added for custom icons
   final DateTime createdAt;
 
   // Fields for counter habits
@@ -24,6 +25,7 @@ class Habit {
     required this.name,
     this.description,
     required this.color,
+    this.iconName,
     required this.createdAt,
     this.habitType = HabitType.simple,
     this.counterGoal,
@@ -38,6 +40,7 @@ class Habit {
       name: json['name'],
       description: json['description'],
       color: ColorUtils.fromHex(json['color_hex']),
+      iconName: json['icon_name'],
       createdAt: DateTime.parse(json['created_at']),
       habitType: (json['habit_type'] == 'counter') ? HabitType.counter : HabitType.simple,
       counterGoal: json['counter_goal'],
@@ -52,6 +55,7 @@ class Habit {
       'name': name,
       'description': description,
       'color_hex': ColorUtils.toHex(color),
+      'icon_name': iconName,
       'habit_type': habitType.name,
       'counter_goal': counterGoal,
       'counter_step': counterStep,

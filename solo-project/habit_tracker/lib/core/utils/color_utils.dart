@@ -6,7 +6,8 @@ class ColorUtils {
 
   /// Converts a [Color] object to a hex string (e.g., '#RRGGBB').
   static String toHex(Color color) {
-    return '#${color.value.toRadixString(16).substring(2).padLeft(6, '0')}';
+    // Use toARGB32() to get the color value as an integer, then mask for RGB.
+    return '#${(color.toARGB32() & 0xFFFFFF).toRadixString(16).padLeft(6, '0')}';
   }
 
   /// Converts a hex string (e.g., '#RRGGBB') to a [Color] object.
