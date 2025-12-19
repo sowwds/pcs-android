@@ -15,7 +15,7 @@ Future<String?> showIconPicker({
 
       return AlertDialog(
         title: const Text('Выберите иконку'),
-        content: const SizedBox(
+        content: SizedBox(
           width: double.maxFinite,
           child: GridView.builder(
             shrinkWrap: true,
